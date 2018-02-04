@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>日本精選在地行程</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="gotop">
+        <div class="gotop-trangle"></div>
+    </div>
+    <div class="pick-condition">
+        <i class="fa fa-sliders"></i>
+        <h4>篩選搜尋結果</h4>
+    </div>
+    <div class="pick-confirm">
+        <div class="btn-container">
+            <button class="pick-confirm-btn">套用</button>
+        </div>
+    </div>
+    <div class="bluebg pagetitle"></div>
+    <div class="jpcityContainer full-width-75">
+        <div class="japanTitle txt-shd">日本</div>
+        <div class="allCityCon clearfix">
+            <div class="allCityTitle txt-shd">所有城市</div>
+            <div class="allCityIcon fa fa-angle-down"></div>
+        </div>
+        <div class="allCity">
+            <div class="dropdown">
+                <a href="#">所有城市</a>
+                <a href="#">沖繩</a>
+                <a href="#">大阪</a>
+                <a href="#">東京</a>
+                <a href="#">奈良</a>
+                <a href="#">北海道</a>
+                <a href="#">名古屋</a>
+                <a href="#">九州</a>
+                <a href="#">岡州</a>
+                <a href="#">愛長</a>
+                <a href="#">神奈川</a>
+                <a href="#">札幌</a>
+                <a href="#">神戶</a>
+                <a href="#">福岡</a>
+                <a href="#">熊本</a>
+            </div>
+        </div>
+    </div>
+    <div class="filter-all full-width-75 clearfix">
+        <div class="sideMenu-group clearfix">
+            <div class="pick-title">
+                <i class="fa fa-times" id="pick-cancel"></i>
+                <h4>篩選條件</h4>
+            </div>
+            <div class="slctDate">
+                <h4>篩選出發日期</h4>
+                <input class "clearfix" id="thedate" type="text" placeholder="選擇日期範圍">
+            </div>
+            <div class="allMerchant">
+                <h3>所有商品類別</h3>
+                <div class="aIconCon">
+                    <a class="link" href="">戶外活動</a>
+                    <div class="merchantIcon fa fa-angle-right"></div>
+                    <div class="dropdown-content">
+                        <a href="#">戶外休閒(6)</a>
+                    </div>
+                </div>
+                <div class="aIconCon">
+                    <a href="#">熱門票券</a>
+                    <div class="merchantIcon fa fa-angle-right"></div>
+                    <div class="dropdown-content">
+                        <a href="#">景點門票(15)</a>
+                        <a href="#">博物館＆展覽(5)</a>
+                        <a href="#">主題樂園(8)</a>
+                        <a href="#">餐廳訂位(32)</a>
+                        <a href="#">特色表演(27)</a>
+                    </div>
+                </div>
+                <div class="aIconCon">
+                    <a href="#">當地生活</a>
+                    <div class="merchantIcon fa fa-angle-right"></div>
+                    <div class="dropdown-content">
+                        <a href="#">獨特體驗(15)</a>
+                        <a href="#">當地美食(2)</a>
+                        <a href="#">身心療癒(5)</a>
+                        <a href="#">逛街購物(18)</a>
+                        <a href="#">文化節慶(22)</a>
+                    </div>
+                </div>
+                <div class="aIconCon">
+                    <a href="#">觀光旅行</a>
+                    <div class="merchantIcon fa fa-angle-right"></div>
+                    <div class="dropdown-content">
+                        <a href="#">城市觀光(11)</a>
+                        <a href="#">文史藝術(8)</a>
+                        <a href="#">自然生態(3)</a>
+                        <a href="#">一日遊(5)</a>
+                        <a href="#">多日遊(28)</a>
+                        <a href="#">私人團＆包車(2)</a>
+                    </div>
+                </div>
+                <div class="aIconCon">
+                    <a href="#">交通 & 旅遊必備</a>
+                    <div class="merchantIcon fa fa-angle-right"></div>
+                    <div class="dropdown-content">
+                        <a href="#">交通票券(12)</a>
+                        <a href="#">專車接送(24)</a>
+                        <a href="#">租車自駕(19)</a>
+                        <a href="#">WIFI＆SIM卡(13)</a>
+                        <a href="#">住宿訂房(3)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slctRange">
+                <h4>價格 (TWD)</h4>
+                <p>
+                    <input type="text" id="amount" readonly style="border:0; color:#706666; font-weight:bold;">
+                </p>
+                <div id="slider-range"></div>
+            </div>
+            <div class="timeStamp">
+                <h4>行程時間</h4>
+                <i class="trangle fa fa-caret-up"></i>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">0 - 4 小時</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">5 小時- 1日</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">2 - 3日</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">4日以上</span>
+                </label>
+            </div>
+            <div class="guideLan">
+                <h4>導覽語言</h4>
+                <i class="trangle fa fa-caret-up"></i>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">全部</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">日本語</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">English</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">中文</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">한국어</span>
+                </label>
+                <label for="" class="checkbox">
+                    <i class="fa fa-square-o"></i>
+                    <span class="checkbox-title">廣東話</span>
+                </label>
+            </div>
+        </div>
+        <div class="content-group clearfix">
+            <div class="product-title">
+                <ul>
+                    <li class="categorySlct">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="categorySlct fa fa-angle-right">
+                        <a href=""></a>
+                    </li>
+                    <li class="categorySlct">
+                        <a href="">日本</a>
+                    </li>
+                    <li class="categorySlct fa fa-angle-right">
+                        <a href=""></a>
+                    </li>
+                    <li class="categorySlct">
+                        <a href="">大阪</a>
+                    </li>
+                </ul>
+                <h4>
+                    <span>152</span>項體驗行程</h4>
+            </div>
+            <div class="sorting">
+                <div class="container">
+                    <span class="sort">排序：</span>
+                    <div class="dropdown">
+                        <button class="dropbtn">價格：高到低</button>
+                        <span class="fa fa-angle-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">價格：高到低</a>
+                            <a href="#">評分：高至低</a>
+                            <a href="#">價格：低到高</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-listview clearfix">
+                <a href="">
+                    <div class="snow-bus-bg">
+                        <div class="img-bg bg1"></div>
+                    </div>
+                    <div class="snow-bus-intro">
+                        <h4>【冬季玩雪巴士】六甲山玩雪＋有馬溫泉・太閤之湯</h4>
+                        <p>冬季限定・溫暖你心！「六甲山滑雪樂園」＋「有馬溫泉：太閣之湯」二合一！從難波出發，1小時內抵達銀白雪山。親子最愛的雪盆到專業滑雪體驗一次滿足。中午</p>
+                        <div class="place-container">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="product-place">日本, 大阪, 兵庫, 神戶</div>
+                        </div>
+                        <div class="time-container">
+                            <i class="fa fa-clock-o"></i>
+                            <div class="product-time">6小時</div>
+                        </div>
+                        <div class="comment-container">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <div class="text-grey-light">(7)</div>
+                            <h2 class="text-primary-price">2272</h2>
+                            <h4>TWD</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-listview clearfix">
+                <a href="">
+                    <div class="snow-bus-bg">
+                        <div class="img-bg bg2"></div>
+                    </div>
+                    <div class="snow-bus-intro">
+                        <h4>【新手滑雪教練】東京富士山二合目 Yeti 滑雪場一日體驗</h4>
+                        <p>東京新宿出發！由專員載您到初學者都愛的富士山"Yeti"滑雪場，邊學滑雪邊享受富士山美景,從初級到高級雪道，另配有華</p>
+                        <div class="place-container">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="product-place">日本, 東京</div>
+                        </div>
+                        <div class="time-container">
+                            <i class="fa fa-clock-o"></i>
+                            <div class="product-time">12小時</div>
+                        </div>
+                        <div class="comment-container">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <div class="text-grey-light">(3)</div>
+                            <h2 class="text-primary-price">2246</h2>
+                            <h4>TWD</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-listview clearfix">
+                <a href="">
+                    <div class="snow-bus-bg">
+                        <div class="img-bg bg3"></div>
+                    </div>
+                    <div class="snow-bus-intro">
+                        <h4>【大阪京都滑雪巴士】琵琶湖Valley・箱館山滑雪一日遊</h4>
+                        <p>想到琵琶湖谷及箱館山體驗滑雪嗎？關西滑雪巴士從大阪、京都出發，2小時內抵達兩大知名滑雪場，搭乘空中纜車，從制高點欣賞</p>
+                        <div class="place-container">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="product-place">日本, 大阪, 京都, 滋賀</div>
+                        </div>
+                        <div class="time-container">
+                            <i class="fa fa-clock-o"></i>
+                            <div class="product-time">12小時</div>
+                        </div>
+                        <div class="comment-container">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <div class="text-grey-light">(93)</div>
+                            <h2 class="text-primary-price">2005</h2>
+                            <h4>TWD</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-listview clearfix">
+                <a href="">
+                    <div class="snow-bus-bg">
+                        <div class="img-bg bg4"></div>
+                    </div>
+                    <div class="snow-bus-intro">
+                        <h4>【大阪滑雪去】滋賀箱館山滑雪場一日體驗</h4>
+                        <p>今年冬天就來滋賀箱館山滑雪場吧！從接送、裝備到親切中文教練都幫您準備好，專屬於新手的完整超值方案，想體驗SKI的初學者千萬不能錯過！</p>
+                        <div class="place-container">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="product-place">日本, 大阪</div>
+                        </div>
+                        <div class="time-container">
+                            <i class="fa fa-clock-o"></i>
+                            <div class="product-time">12小時</div>
+                        </div>
+                        <div class="comment-container">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <div class="text-grey-light">(7)</div>
+                            <h2 class="text-primary-price">2139</h2>
+                            <h4>TWD</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="row full-width-75">
+                <div class="col-4">
+                    <h4>認識KKday</h4>
+                    <ul>
+                        <li>
+                            <a href="http://">關於KKday</a>
+                        </li>
+                        <li>
+                            <a href="http://">聯絡客服</a>
+                        </li>
+                        <li>
+                            <a href="http://">服務條款與隱私聲明</a>
+                        </li>
+                        <li>
+                            <a href="http://">常見問題與幫助</a>
+                        </li>
+                        <li>
+                            <a href="http://">媒體報導</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h4>給旅人</h4>
+                    <ul>
+                        <li>
+                            <a href="http://">三大保證</a>
+                        </li>
+                        <li>
+                            <a href="http://">合作夥伴</a>
+                        </li>
+                        <li>
+                            <a href="http://">旅人故事</a>
+                        </li>
+                        <li>
+                            <a href="http://">官方部落格</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h4>KKday 合作夥伴</h4>
+                    <ul>
+                        <li>
+                            <a href="http://">成為我們的夥伴</a>
+                        </li>
+                        <li>
+                            <a href="http://">聯盟行銷</a>
+                        </li>
+                        <li>
+                            <a href="http://">工作機會</a>
+                        </li>
+                        <li>
+                            <a href="http://">部落客/攝影師合作計畫</a>
+                        </li>
+                        <li>
+                            <a href="http://">企業福委旅遊合作</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h4>聯絡我們</h4>
+                    <ul>
+                        <li class="footerIcon fa fa-facebook">
+                            <a href="http://"></a>
+                        </li>
+                        <li class="footerIcon fa fa-youtube">
+                            <a href="http://"></a>
+                        </li>
+                        <li class="footerIcon fa fa-instagram">
+                            <a href="http://"></a>
+                        </li>
+                        <li class="footerIcon fa fa-twitter">
+                            <a href="http://"></a>
+                        </li>
+                        <li class="footerIcon fa fa-bold">
+                            <a href="http://"></a>
+                        </li>
+                        <li class="footerIcon fa fa-pinterest">
+                            <a href="http://"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="full-width-75">
+            <div class="copyright fixed-width">
+                <h8>COPYRIGHT © 2016 KKday All rights reserved.</h8>
+            </div>
+        </div>
+        <div class="twfooter">
+            <div class="row full-width-75">
+                <div class="info col-3">
+                    <ul>
+                        <li>酷遊天國際旅行社股份有限公司</li>
+                        <li>酷遊天股份有限公司</li>
+                        <li>甲種旅行業</li>
+                        <li>交觀甲第7774號</li>
+                        <li>統一編號 2497 7417</li>
+                    </ul>
+                </div>
+                <div class="info col-3">
+                    <ul>
+                        <li>地址 台北市南港區八德路四段768巷5號3樓之1</li>
+                        <li>市話 02-7741-7450</li>
+                        <li>手機 0971-532-770</li>
+                        <li>傳真 02-2786-1101</li>
+                        <li>e-mail service@kkday.com</li>
+                    </ul>
+                </div>
+                <div class="info col-3">
+                    <ul>
+                        <li>代表人 陳惟倫</li>
+                        <li>聯絡人 蘇姿亦</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

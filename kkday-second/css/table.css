@@ -1,0 +1,981 @@
+@media screen and (min-width: 760px) and (max-width: 990px) {
+  * {
+    font-family: microsoft jhenghei;
+    font-weight: bold;
+  }
+  body,
+  html {
+    background-color: #f5f5f5 !important;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  li,
+  p {
+    /* 重置內、外距*/
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  li,
+  a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .full-width-90 {
+    width: 95%;
+  }
+  .full-width-75 {
+    width: 80%;
+  }
+  .fixed-width {
+    width: 1140px;
+    margin: auto;
+  }
+  .box-shd {
+    box-shadow: #999 1px 1px 15px 1px;
+  }
+  .txt-shd {
+    text-shadow: #999 0.1em 0.1em 0.1em;
+  }
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .col-3 {
+    width: calc(100% / 3);
+    float: left;
+    margin: 0px;
+  }
+  .col-4 {
+    width: calc(100% / 4 - 20px) !important;
+    float: left;
+    margin: 0 10px;
+    max-width: 21.3% !important;
+  }
+
+  .gotop {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(117, 117, 117, 0.5);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .gotop:hover {
+    background-color: rgba(117, 117, 117, 0.6);
+  }
+  .pick-condition {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(114, 114, 114);
+    position: fixed;
+    bottom: 20px;
+    left: 45%;
+    z-index: 2;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .pick-condition i,
+  .pick-condition h4 {
+    font-size: 0.8em;
+    display: inline-block;
+    line-height: 35px;
+    position: relative;
+    left: 21%;
+    font-weight: bold;
+  }
+  .gotop-trangle {
+    position: relative;
+    bottom: -16px;
+    right: -14px;
+    width: 13px;
+    height: 13px;
+    border-top: solid 3px #fff;
+    border-left: solid 3px #fff;
+    transform: rotate(45deg);
+  }
+  .pick-confirm {
+    width: 100%;
+    height: 10%;
+    z-index: 22;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    display: none;
+  }
+  .btn-container {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    position: relative;
+    top: 19%;
+  }
+  .pick-confirm-btn {
+    width: 100%;
+    height: 100%;
+    background-color: #26bec9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  .welcome-page-action {
+    position: relative;
+  }
+  .welcome-page {
+    width: 60%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #effeff;
+    margin: auto;
+    height: 133.8px;
+    position: relative;
+  }
+  .kksearch {
+    color: #138184;
+    margin-left: 35px;
+  }
+  .kksearch h2 {
+    font-size: 1.7em;
+    margin: 20px 0;
+  }
+  #search_experience_value {
+    width: 90.5%;
+    border: 0.5px solid rgb(214, 214, 214);
+    height: 48px;
+    margin: auto;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .search_mark {
+    width: 48px;
+    height: 48px;
+    background-color: #22abb5;
+    line-height: 48px;
+    text-align: center;
+    color: #fdfefe;
+    font-size: 24px;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: right;
+    position: absolute;
+    right: 50px;
+  }
+  #search_experience_value {
+    padding-left: 10px;
+  }
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgb(182, 182, 182);
+    font-size: 1.1em;
+  }
+  #thedate::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .recommand-city {
+    margin: auto;
+  }
+  .recommand-city .title,
+  .korea .title {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  .recommand-city .sub-title {
+    font-size: 16px;
+    margin-left: 5px;
+    color: #555;
+  }
+  .recommand-city .col-4 {
+    height: 274px;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+  .recommand-city .col-4::after {
+    content: "";
+    display: block;
+    height: 25%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 100;
+  }
+  .recommand-city .col-4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+    opacity: 0;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+  }
+  .recommand-city .col-4:hover::after {
+    opacity: 1;
+  }
+  .recommand-city h3 {
+    color: #fff;
+    font-size: 1.3em;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 30px;
+  }
+  .recommand-city .col-4 h4 {
+    color: #fff;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 10px;
+  }
+  .recommand-city .col-4:nth-of-type(1) {
+    background-image: url(https://farm3.static.flickr.com/2903/33072008974_43670a111d_c.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .recommand-city .col-4:nth-of-type(2) {
+    background-image: url(https://farm5.static.flickr.com/4560/24869897598_2fa4719020_c.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .recommand-city .col-4:nth-of-type(3) {
+    background-image: url(https://farm5.static.flickr.com/4063/35218628000_d9bf6c24e8_c.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .recommand-city .col-4:nth-of-type(4) {
+    background-image: url(https://farm4.static.flickr.com/3772/11308035054_f60d85410e_c.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .recommand-city .col-4:nth-of-type(5) {
+    background-image: url(https://farm6.static.flickr.com/5564/14436078594_26b10078f2_c.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .recommand-city .col-4:nth-of-type(6) {
+    background-image: url(https://visualhunt.com/photos/l/7/hotel-balcony-palm-tree-window.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .recommand-city .col-4:nth-of-type(7) {
+    background-image: url(https://farm2.static.flickr.com/1662/25885247353_e4c9c2cf27_c.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .recommand-city .col-4:nth-of-type(8) {
+    background-image: url(https://visualhunt.com/photos/l/7/bridging-builds-cathedral-city.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .koreaBig {
+    height: 380px;
+  }
+  .korea {
+    height: 320px;
+  }
+  .korea .col-4 {
+    border: 0.5px solid rgb(214, 212, 212);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+  }
+  .korea .col-4 img {
+    border-radius: 5px;
+    height: 58%;
+    width: 98%;
+    position: center;
+    margin: auto;
+    display: block;
+    padding-top: 2px;
+  }
+  .korea .title {
+    margin-left: 10px;
+  }
+  .korea h4 {
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .korea h5:nth-of-type(1) {
+    float: left;
+  }
+  .korea .orderIcon,
+  .korea .orderIcon2 {
+    float: left;
+    margin: 0 9px;
+    font-size: 11px;
+    line-height: 172%;
+    color: #d6d6d6;
+  }
+  .korea .orderIcon2 {
+    font-size: 14;
+    line-height: 127%;
+    position: absolute;
+    top: 270px;
+    left: 1.5px;
+  }
+  .korea h5,
+  .korea .price,
+  .korea .rate {
+    font-size: 12px;
+    color: #858585;
+  }
+  .korea h5:nth-of-type(2) {
+    position: absolute;
+    top: 270px;
+    left: 29px;
+  }
+  .starContainer {
+    word-spacing: -2px;
+    font-size: 13px;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    color: #51cbd4;
+  }
+  .grey {
+    color: rgb(214, 214, 214);
+  }
+  .korea .rate {
+    position: absolute;
+    bottom: 8px;
+    left: 80px;
+  }
+  .korea .price {
+    position: absolute;
+    bottom: 8px;
+    right: 6px;
+  }
+  .korea span {
+    font-size: 18px;
+    color: #51cbd4;
+    margin-left: 5px;
+  }
+  .why-kkday {
+    height: 440px;
+  }
+  .wraper {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(https://imgur.com/kvczprs.jpg);
+  }
+  .wraper::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .why-kkday h2,
+  p {
+    text-align: center;
+    width: 580px;
+    margin: auto;
+    line-height: 35px;
+  }
+  .why-kkday button {
+    width: 200px;
+    height: 55px;
+    background-color: #f5d313;
+    color: #fff;
+    border: none;
+    /* box-shadow: 1px 1px 20px 1px #555; */
+    border-radius: 5px;
+    position: absolute;
+    left: 43%;
+    bottom: 20%;
+    font-size: 1.2em;
+  }
+  .why-kkday h2 {
+    font-size: 2.6em;
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+    right: 30%;
+  }
+  .why-kkday p {
+    width: 580px;
+    height: 113px;
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 70px;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+  }
+  .bluebg {
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+  .filter-all {
+    box-sizing: border-box;
+    margin: auto;
+    height: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    top: -150px;
+  }
+  .jpcityContainer {
+    position: relative;
+    top: -160px;
+    margin: auto;
+  }
+  .pagetitle {
+    height: 200px;
+    width: 100%;
+    background: -webkit-linear-gradient(51deg, #64b3f4 0%, #26bec9 50%);
+    background: -o-linear-gradient(51deg, #64b3f4 0%, #26bec9 50%);
+    background: linear-gradient(rgba(250, 250, 250, 0) 20%, #f5f5f5 100%),
+      linear-gradient(141deg, #64b3f4 0%, #26bec9 50%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    color: white;
+  }
+  .japanTitle,
+  .allCityTitle,
+  .allCityIcon {
+    color: #fff;
+  }
+  .japanTitle {
+    margin: 0 20px;
+  }
+  .allCityTitle {
+    float: left;
+    font-size: 1.9em;
+    margin: 0 20px 20px 20px;
+  }
+  .allCity .dropdown {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5%;
+    overflow-y: auto;
+    height: 290px;
+  }
+  .allCity .dropdown a {
+    color: #333;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    background-color: #fff;
+    font-size: 0.9em;
+    border-radius: 5%;
+    z-index: 1;
+  }
+  .allCityCon {
+    cursor: pointer;
+  }
+  .allCityIcon {
+    font-size: 1.5em;
+    float: left;
+    line-height: 40px;
+    margin-left: 5px;
+    margin: auto;
+  }
+  .allCity li {
+    margin-top: 15px;
+    color: #000;
+  }
+  .allCity li a {
+    color: #000;
+    font-weight: 650;
+  }
+  .sideMenu-group {
+    float: left;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    /* position: absolute;
+    top: -2000px; */
+  }
+  .sideMenu-group-slider{
+    position: static;
+  }
+  .slctDate,
+  .allMerchant,
+  .slctRange,
+  .timeStamp,
+  .guideLan,
+  .pick-title {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .pick-title h4 {
+    text-align: center;
+  }
+  #pick-cancel {
+    display: inline-block;
+    float: left;
+    line-height: 35px;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+  .slctDate {
+    height: 100px;
+    top: -7.5%;
+  }
+  .allMerchant {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .slctDate h4,
+  .allMerchant h3,
+  .slctRange h4,
+  .timeStamp h4,
+  .guideLan h4 {
+    font-weight: bold !important;
+    font-size: 17px;
+  }
+  #thedate {
+    width: 95%;
+    height: 42px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-family: "microsoft jhenghei";
+    color: rgb(97, 97, 97);
+    font-size: 14px;
+    background-color: #fafafa;
+  }
+  .allMerchant {
+    height: 285px;
+    cursor: pointer;
+  }
+  .allMerchant h3 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .allMerchant .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #eff9fa;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    border-radius: 5%;
+    transition: all 0s;
+    height: auto;
+    z-index: 999;
+  }
+  .allMerchant .dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8em;
+    font-weight: normal;
+    border-radius: 5%;
+    background-color: #eff9fa;
+  }
+  .open {
+    display: block;
+  }
+  .aIconCon {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 44px;
+  }
+  .aIconCon:hover {
+    background-color: #eff9fa;
+  }
+  .aIconCon a {
+    font-size: 14px;
+    color: #333;
+    padding-left: 15px;
+  }
+  .aIconCon a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  .aIconCon a:hover .slctDate {
+    font-size: 5em;
+  }
+  .merchantIcon {
+    float: right;
+    line-height: 44px;
+    margin-right: 15px;
+  }
+  .allMerchantList li {
+    font-family: microsoft jhenghei;
+    font-size: 0.9em;
+    height: 53px;
+    background-color: #eff9fa;
+    width: 300px;
+    padding: 15px;
+    display: none;
+  }
+  .slctRange {
+    height: 150px;
+    padding: 15px;
+  }
+  .slctRange p {
+    width: 100%;
+    text-align-last: left;
+  }
+  .slider-range {
+    margin-top: 15px;
+  }
+  .ui-slider .ui-slider-handle {
+    border-radius: 50%;
+  }
+  .timeStamp,
+  .guideLan {
+    position: relative;
+    padding: 15px;
+  }
+  .timeStamp .container h4 {
+    margin: 0;
+    padding-left: 50px;
+  }
+  .timeStamp .trangle,
+  .guideLan .trangle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #666666;
+    transition: all 0.1s;
+  }
+  .timeStamp .trangle:active,
+  .guideLan .trangle:active {
+    transform: rotate(180deg);
+  }
+  .timeStamp .trangle:hover,
+  .guideLan .trangle:hover {
+    color: black;
+  }
+  .timeStamp .checkbox,
+  .guideLan .checkbox {
+    display: block;
+    margin-top: 15px;
+    margin-left: 5px;
+    color: #666;
+    font-size: 0.9em;
+  }
+  .timeStamp span,
+  .guideLan span {
+    margin-left: 15px;
+  }
+  .checkbox i,
+  .guideLan i {
+    font-size: 1.2em;
+  }
+  .timeStamp .checkbox:hover,
+  .guideLan .checkbox:hover {
+    cursor: pointer;
+  }
+  .timeStamp .checkbox:hover i,
+  .guideLan .checkbox:hover i {
+    color: #5fb7e7;
+  }
+  .fa-check-square {
+    color: #5fb7e7;
+    font-size: 1.2em;
+  }
+  footer {
+    background-color: #444;
+  }
+  .row {
+    margin: auto !important;
+  }
+  .row .col-4 {
+    margin-bottom: 50px;
+  }
+  .row h4 {
+    color: #8d8d8d;
+    margin: 50px 0 20px 0;
+    font-size: 1.1em;
+  }
+  .row a {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 20px;
+  }
+  .footerIcon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #555;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+  }
+  .copyright {
+    margin-top: 20px;
+    width: 100%;
+    text-align: right;
+    color: #aaa;
+    font-family: "calibri";
+    font-size: 0.9em;
+  }
+  hr {
+    width: 100%;
+    color: #555;
+    border: 0.5px solid #555;
+  }
+  .twfooter {
+    margin-top: 20px;
+    background-color: #333;
+    height: 150px;
+    width: 100%;
+  }
+  .twfooter .info {
+    margin-top: 20px;
+    font-size: 0.7em;
+    line-height: 20px;
+  }
+  .info li {
+    color: #999;
+  }
+  .product-title,
+  .sorting,
+  .product-listview {
+    width: 100%;
+    background-color: #fff;
+    float: right;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .product-title h4 {
+    font-size: 1em;
+  }
+  .product-title span {
+    color: #26bece;
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  .categorySlct {
+    font-size: 0.9em;
+    display: inline-block;
+  }
+  .categorySlct a {
+    color: #138194;
+  }
+  .product-title .fa {
+    line-height: 20px;
+  }
+  .sorting {
+    background-color: transparent;
+  }
+  .sorting .container {
+    float: right;
+    width: auto;
+  }
+  .sort {
+    color: #999;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  .sorting .dropbtn {
+    color: #333;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .sorting .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .sorting .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5%;
+  }
+  .sorting .dropdown-content a {
+    color: #333;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    background-color: #fff;
+    font-size: 0.9em;
+    height: 25%;
+    font-weight: normal;
+    border-radius: 5%;
+  }
+  .sorting .dropdown-content a:hover {
+    background-color: #f5f5f5;
+    color: black;
+    text-decoration: none;
+  }
+  .sorting .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .sorting .dropdown:hover .dropbtn {
+    background-color: #eee;
+  }
+  .product-listview {
+    padding: 0;
+    margin-top: 15px;
+  }
+  .product-listview:hover::after {
+    opacity: 1;
+  }
+  .product-listview::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #f00;
+    z-index: 99;
+    opacity: 0;
+  }
+  .product-listview a:hover {
+    color: #5a5a5a;
+    text-decoration: none;
+  }
+  .snow-bus-bg {
+    float: left;
+    width: 30%;
+    height: 234.3px;
+  }
+  .img-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+  .bg1 {
+    background-image: url(https://farm1.static.flickr.com/467/32534014540_fabc087350_c.jpg);
+  }
+  .bg2 {
+    background-image: url(https://farm4.static.flickr.com/3798/11357743204_c4b8d07549_c.jpg);
+  }
+  .bg3 {
+    background-image: url(https://farm8.static.flickr.com/7325/12300055124_f15e3849bc_c.jpg);
+  }
+  .bg4 {
+    background-image: url(https://visualhunt.com/photos/xl/8/christmas-elf-father-christmas.jpg);
+  }
+  .snow-bus-intro {
+    width: 70%;
+    float: right;
+    padding: 15px 15px 0 15px;
+  }
+  .snow-bus-intro h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
+  }
+  .snow-bus-intro p {
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 20px;
+    text-align: justify;
+    color: #444;
+  }
+  .place-container i,
+  .product-place,
+  .product-time {
+    display: inline-block;
+  }
+  .product-place,
+  .product-time {
+    color: #444;
+    font-size: 0.8em;
+  }
+  .place-container i,
+  .time-container i {
+    color: #d4d4d4;
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  .comment-container {
+    margin-top: 30px;
+  }
+  .comment-container i,
+  .comment-container h4,
+  .text-primary,
+  .text-grey-light {
+    display: inline-block;
+  }
+  .comment-container i {
+    color: #4fc9d2;
+    font-size: 0.7em;
+  }
+  .text-grey-light {
+    color: #bcbcbc;
+    font-size: 0.7em;
+  }
+  .comment-container h4,
+  .text-primary-price {
+    float: right;
+  }
+  .comment-container h4 {
+    font-size: 0.8em;
+    color: #afafaf;
+    font-weight: normal;
+    line-height: 28px;
+    margin-right: 5px;
+  }
+  .text-primary-price {
+    font-size: 1.2em;
+    color: #4fc9d2;
+  }
+  .fuckyou {
+    height: 1000px;
+    width: 100%;
+    background-color: #f00;
+  }
+}
